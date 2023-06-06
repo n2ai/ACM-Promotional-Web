@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const date= new Date()
-const evs = new mongoose.Schema({
+const events = new mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -17,9 +17,13 @@ const evs = new mongoose.Schema({
         type:Date,
         required:true,
         max: date   /*  obj.validateSync() will return err if date is greater than min */
+    },
+    imgUrl:{
+        type:String,
+        required:true,
     }
 });
 
-const event = mongoose.model('Events', evs);
+const Event = mongoose.model('Events', events);
 
-module.exports =  event;
+module.exports =  Event;

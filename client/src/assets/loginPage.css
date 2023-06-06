@@ -1,0 +1,17 @@
+.loginSection{
+    
+
+}
+
+.loginSection__title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginSection__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

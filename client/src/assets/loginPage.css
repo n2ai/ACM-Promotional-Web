@@ -1,6 +1,7 @@
 .loginSection{
-    
-
+    border: solid;
+    border-color: gray;
+    margin-top: 200px;
 }
 
 .loginSection__title{
@@ -11,7 +12,39 @@
 }
 
 .loginSection__form{
+    
+    margin-top: 50px;
+}
+
+.loginSection__form__input{
+    
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 40px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.loginSection__form__input > input{
+    border:  solid;
+    border-color: gray;
+    border-radius: 25px;
+    height: 100%;
+    width: 40%;
+    
+}
+
+::placeholder{
+    padding: 5px;
+}
+
+.loginSection__form__input > button{
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+    border:  solid;
+    border-color: gray;
+    cursor: pointer;
 }

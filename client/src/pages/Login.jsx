@@ -12,6 +12,7 @@ export default function Login(){
             email,
             password
         })
+        console.log()
     }
 
     return(
@@ -20,9 +21,15 @@ export default function Login(){
                 <h1>Login</h1>
             </div>
             <form className="loginSection__form" onSubmit={handleLoginSubmit}>
-                <input type="email" onChange={e => setEmail(e.target.value)} value={email} placeholder="Email"></input>
-                <input type="text" onChange={e => setPassword(e.target.value)} value={password} placeholder="Password"></input>
-                <button>Login</button>
+                <div className="loginSection__form__input">
+                    <input type="email" onChange={e => setEmail(e.target.value)} value={email} placeholder="Email"></input>
+                </div>
+                <div className="loginSection__form__input">
+                    <input type="text" onChange={e => setPassword(e.target.value)} value={password} placeholder="Password"></input>
+                </div>
+                <div className="loginSection__form__input">
+                    <button>Login</button>
+                </div>
             </form>
         </div>
 
